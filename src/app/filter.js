@@ -1,5 +1,5 @@
 export const filterTodos = (
-  todos,
+  {todos},
   filter
 ) => {
   switch (filter) {
@@ -14,7 +14,7 @@ export const filterTodos = (
   }
 }
 
-export const setVisibilityFilter = (filter) => ({
-  type: 'SET_VISIBILITY_FILTER',
-  filter: filter
-});
+// export const setVisibilityFilter = (filter) => ({
+//   type: 'SET_VISIBILITY_FILTER',
+//   filter: filter
+// });

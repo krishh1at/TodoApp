@@ -42,17 +42,17 @@ const todos = (
   }
 };
 
-const visibilityFilter = (
-  state = 'all',
-  action
-) => {
-  switch (action.type) {
-    case 'SET_VISIBILITY_FILTER':
-      return action.filter;
-    default:
-      return state;
-  }
-};
+// const visibilityFilter = (
+//   state = 'all',
+//   action
+// ) => {
+//   switch (action.type) {
+//     case 'SET_VISIBILITY_FILTER':
+//       return action.filter;
+//     default:
+//       return state;
+//   }
+// };
 
 /*
 // Reducer composition pattern
@@ -104,5 +104,5 @@ const combineReducers = (reducers) => {
 
 export const todoApp = combineReducers({
   todos, //=> todos field in state object will be updated by todos reducer.
-  visibilityFilter//=> visibilityFilter field in state object will be updated by visibilityFilter reducer.
+  // visibilityFilter//=> visibilityFilter field in state object will be updated by visibilityFilter reducer.
 });
